@@ -10,9 +10,11 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.envers.Audited;
 
 @Data
 @Entity
+@Audited
 @Builder
 @Table(name = "products")
 @NoArgsConstructor
